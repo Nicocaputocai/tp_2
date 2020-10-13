@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Película</title>
+</head>
+<body>
+    <%- include('partials/header') %> 
+</section>
+<form action="/movies/create" method="POST">
+    <section class="form">
+        <div class="grupo-form">
+            <h3><label for="">Título:</label></h3>
+            <input type="text" name="title" placeholder="Escribí acá" >
+        </div>
+        <div class="grupo-form">
+            <h3><label for="">Rating:</label></h3>
+            <input type="text" name="rating" placeholder="Escribí acá" required >
+        </div>
+        <div class="grupo-form">
+            <h3><label for="">Premios:</label></h3>
+            <input type="text"  name="awards" placeholder="Escribí acá"  >
+        </div>
+        <div class="grupo-form">
+            <h3><label for="">Fecha de estreno:</label></h3>
+            <input type="date" id="barra"  name="realese_date" placeholder="Escribí acá" >
+        </div>
+        <div class="grupo-form">
+            <h3><label for="">Duración:</label></h3>
+            <input type="number"  name="length" placeholder="Escribí acá" required >
+        </div>
+        <div class="grupo-form">
+            <h3><label for="">Género:</label></h3>
+            <input type="text"  name="genre_id" placeholder="Escribí acá" >
+        </div>
+        <div>
+            <button type="reset" class="btn btn-outline-secondary mr-3">Borrar</button>
+            <button type="submit" class="btn btn-outline-secondary mr-3" id="agregar">Agregar</button>
+        </div>
+    </section>
+</body>
+</html>

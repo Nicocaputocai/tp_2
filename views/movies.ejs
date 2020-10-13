@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas</title>
+</head>
+<body>
+    <%- include('partials/header') %> 
+    <% peliculas.forEach(pelicula => { %>
+
+        <a href="/movies/detail/<%= pelicula.id %> "><h1><%= pelicula.title %> </h1> </a> 
+    
+    <% }) %>
+</body>
+</html>
